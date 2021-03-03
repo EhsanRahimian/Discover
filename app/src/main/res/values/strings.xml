@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="title_activity_restaurant_detail">RestaurantDetailActivity</string>
+    <string name="delivery_fee">delivery fee</string>
+    <string name="delivery_time">delivery time</string>
+    <string name="restaurant_image">Restaurant image</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailedView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/restaurant_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:contentDescription="@string/restaurant_image"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <ProgressBar
+        android:id="@+id/content_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"/>
+
+    <TextView
+        android:id="@+id/restaurant_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:text="Peet's COFFEE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/restaurant_details_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16sp"
+        tools:text="Coffee &amp; Tea" />
+
+    <TextView
+        android:id="@+id/restaurant_details_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:text="4.9 / 5.0 (122 ratings)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/restaurant_details_delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="start"
+            tools:text="$0.00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/restaurant_details_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@android:color/black"
+            tools:text="28 - 38 mins"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
