@@ -12,7 +12,7 @@ public class Restaurant {
     private String name;
     private String description;
     private String coverImgUrl;
-    //private Status status;
+
 
     public int getId() {
         return id;
@@ -30,9 +30,7 @@ public class Restaurant {
         return coverImgUrl;
     }
 
-//    public String getDeliveryTime() {
-//        return !status.asapMinutesRange.isEmpty() ? String.valueOf(status.asapMinutesRange.get(0)) : "";
-//    }
+
 
     public boolean equals(Object another) {
         if (this == another) return true;
@@ -45,7 +43,7 @@ public class Restaurant {
         return anotherRestaurant.id == id &&
                 anotherRestaurant.name.equals(name) &&
                 anotherRestaurant.description.equals(description) &&
-                anotherRestaurant.coverImgUrl.equals(coverImgUrl); //&&
-                //anotherRestaurant.status == status;
+                anotherRestaurant.coverImgUrl.equals(coverImgUrl);
+
     }
 }
