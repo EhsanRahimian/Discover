@@ -1,6 +1,7 @@
 package com.nicootech.discover;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         adaptor = new RestaurantListAdaptor();
         RecyclerView recyclerView = binding.recyclerView;
-
+        
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
         dividerItemDecoration.setDrawable(getResources().getDrawable(R.drawable.divider));

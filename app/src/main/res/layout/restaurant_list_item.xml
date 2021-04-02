@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="96dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/image_logo"
         android:layout_width="96dp"
         android:layout_height="64dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/text_name"
         style="@style/TextAppearance.AppCompat"
         android:layout_width="0dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="The Melt" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/text_type"
         style="@style/TextAppearance.AppCompat.Caption"
         android:layout_width="0dp"

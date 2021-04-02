@@ -4,6 +4,7 @@ import com.nicootech.discover.model.RestaurantV2;
 import com.nicootech.discover.repositories.RestaurantRepository;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 
